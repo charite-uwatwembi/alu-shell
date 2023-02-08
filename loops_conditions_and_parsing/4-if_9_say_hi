@@ -11,3 +11,4 @@ do
        echo "Best School"
    fi
    (( COUNTER++ ))
+done   
