@@ -10,7 +10,7 @@ fi
 
 if [ "$command" == "start" ]; then
 
-  bash ./manage_my_process &
+ bash ./manage_my_process &
   echo "$!" > /var/run/my_process.pid
   echo "manage_my_process started"
 
@@ -20,7 +20,7 @@ elif [ "$command" == "stop" ]; then
 
 elif [ "$command" == "restart" ]; then
 
-  "$0" stop >& /dev/null
+"$0" stop >& /dev/null
   "$0" start >& /dev/null
   echo "manage_my_process restarted"
 
